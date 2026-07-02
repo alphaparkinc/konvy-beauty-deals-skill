@@ -1,0 +1,67 @@
+{
+  "name": "konvy-beauty-deals-skill",
+  "version": "1.0.0",
+  "description": "An AI agent skill for discovering authentic beauty deals, searching cosmetics products, browsing brands, and finding promotions on Konvy.com \u2014 Thailand's leading beauty e-commerce platform.",
+  "author": "alphaparkinc",
+  "homepage": "https://www.konvy.com",
+  "category": "e-commerce",
+  "tags": [
+    "beauty",
+    "cosmetics",
+    "skincare",
+    "deals",
+    "thailand",
+    "konvy",
+    "makeup"
+  ],
+  "inputs": {
+    "query": {
+      "type": "string",
+      "description": "Product name, ingredient, or brand to search for."
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "skincare",
+        "makeup",
+        "fragrance",
+        "health",
+        "baby",
+        "tools",
+        "fashion",
+        "body",
+        "home"
+      ],
+      "description": "Product category to filter by."
+    },
+    "brand": {
+      "type": "string",
+      "description": "Brand slug (e.g. 'cerave', 'maybelline', 'neutrogena')."
+    },
+    "max_price_thb": {
+      "type": "number",
+      "description": "Maximum price in Thai Baht to filter results."
+    },
+    "limit": {
+      "type": "integer",
+      "description": "Maximum number of results to return.",
+      "default": 10
+    }
+  },
+  "outputs": {
+    "products": {
+      "type": "array",
+      "description": "List of matched beauty products with name, price, discount, brand, and URL."
+    },
+    "total_found": {
+      "type": "integer",
+      "description": "Total number of matching products found."
+    },
+    "best_deal": {
+      "type": "object",
+      "description": "The product with the highest discount percentage."
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
