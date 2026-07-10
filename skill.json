@@ -1,11 +1,19 @@
 {
   "name": "konvy-beauty-deals-skill",
   "version": "1.0.0",
-  "description": "An AI agent skill for discovering authentic beauty deals, searching cosmetics products, browsing brands, and finding promotions on Konvy.com — Thailand's leading beauty e-commerce platform.",
-  "author": "alphaparkinc",
+  "description": "GenPark AI Agent Skill - An AI agent skill for discovering authentic beauty deals, searching cosmetics products, browsing brands, and finding promotions on Konvy.com \u2014 Thailand's leading beauty e-commerce platform.",
+  "author": "genpark",
   "homepage": "https://www.konvy.com",
   "category": "e-commerce",
-  "tags": ["beauty", "cosmetics", "skincare", "deals", "thailand", "konvy", "makeup"],
+  "tags": [
+    "beauty",
+    "cosmetics",
+    "skincare",
+    "deals",
+    "thailand",
+    "konvy",
+    "makeup"
+  ],
   "inputs": {
     "query": {
       "type": "string",
@@ -13,7 +21,17 @@
     },
     "category": {
       "type": "string",
-      "enum": ["skincare", "makeup", "fragrance", "health", "baby", "tools", "fashion", "body", "home"],
+      "enum": [
+        "skincare",
+        "makeup",
+        "fragrance",
+        "health",
+        "baby",
+        "tools",
+        "fashion",
+        "body",
+        "home"
+      ],
       "description": "Product category to filter by."
     },
     "brand": {
