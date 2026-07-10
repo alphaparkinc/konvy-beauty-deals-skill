@@ -1,4 +1,4 @@
-# konvy-beauty-deals-skill
+# genpark-konvy-beauty-deals-skill
 
 > **GenPark AI Agent Skill** -- Discover authentic beauty deals on [Konvy.com](https://www.konvy.com), Thailand's leading cosmetics e-commerce platform.
 
